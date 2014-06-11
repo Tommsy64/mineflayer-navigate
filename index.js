@@ -347,8 +347,12 @@ function inject(bot) {
   }
 
   function isSafe(block) {
-    return block.boundingBox === 'empty' &&
-      !bot.navigate.blocksToAvoid[block.type];
+    if (block == null) {
+        return true;
+    } else {
+        return block.boundingBox === 'empty' &&
+          !bot.navigate.blocksToAvoid[block.type];
+    }
   }
 
 }

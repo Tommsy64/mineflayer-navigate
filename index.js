@@ -1,5 +1,4 @@
-var aStar = require('a-star')
-  , EventEmitter = require('events').EventEmitter
+var aStar = require('a-star'), EventEmitter = require('events').EventEmitter
 
 module.exports = init;
 
@@ -21,7 +20,6 @@ function init(mineflayer) {
 }
 
 function inject(bot) {
-  var currentCourse = [];
   var cardinalDirectionVectors = [
     vec3(-1, 0,  0), // north
     vec3( 1, 0,  0), // south

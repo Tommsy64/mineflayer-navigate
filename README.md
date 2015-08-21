@@ -114,6 +114,7 @@ Parameters:
    - `isEnd` - function(node) - passed on to the A* library. `node.point` is
      a vec3 instance.
    - `endRadius` - used for default `isEnd`. Effectively defaults to 0.
+   - `onArrived` - The function to call once successfully arrived.
    - `timeout` - passed on to the A* library. Default 10 seconds.
    - `tooFarThreshold` - if `end` is greater than `tooFarThreshold`, this
      function will search instead for a path to walk 100 meters in the general
